@@ -1,2 +1,6 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<h1>Showing all Movies</h1>
+<% @movie.each do |mov| %>
+    <h2><%= mov.name %></h2>
+    <p><%= mov.sypnosis %></p>
+    <h5><%= mov.director %></h5>
+<% end%>

@@ -1,2 +1,6 @@
-<h1>DocumentarysFilms#index</h1>
-<p>Find me in app/views/documentarys_films/index.html.erb</p>
+<h1>Showing all Documentaries</h1>
+<% @documentaryfilm.each do |doc| %>
+    <h2><%= doc.name %></h2>
+    <p><%= doc.sypnosis %></p>
+    <h5><%= doc.director %></h5>
+<% end%>

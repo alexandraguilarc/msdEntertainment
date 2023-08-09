@@ -1,2 +1,6 @@
-<h1>Series#index</h1>
-<p>Find me in app/views/series/index.html.erb</p>
+<h1>Showing all Series</h1>
+<% @serie.each do |ser| %>
+    <h2><%= ser.name %></h2>
+    <p><%= ser.sypnosis %></p>
+    <h5><%= ser.director %></h5>
+<% end%>

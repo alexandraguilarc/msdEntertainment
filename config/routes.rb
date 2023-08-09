@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   get 'movies/new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+  #Rutas Post
+  post "movies" => "movies#create"
+  post "series" => "series#create"
+  post "documentarys_films" => "documentarys_films#create"
+
   # Defines the root path route ("/")
   root "movies#new"
 end
